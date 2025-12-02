@@ -168,7 +168,7 @@
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/file/d/1JqYV6wluzNYf3WXnsA1ELEtWFNglGR_9/view?usp=sharing" class="down-btn btn-a" download>download cv</a>
+                    <a href="https://drive.google.com/file/d/1-d2kp_xyN9uibnBJthwwG7Mu2quD85Co/view?usp=sharing" class="down-btn btn-a" download>download cv</a>
 
                 </div>
             </div>
@@ -244,18 +244,6 @@
                         </p>
                     </li>
                     <li class="resume-item expr">
-                        <h3>New Hulu Clone</h3>
-                        <h4><a href="https://new-hulu-clone.web.app/"/>Link</a></h4>
-                        <img src="./images/skills/new-hulu-clone-app.png" alt="New Hulu Clone" />
-                        <p>A responsive and sleek design of the probable new Hulu UI built using React JS. Added functionality to top movies based on genre. Hosted online through Firebase.</p>
-                      </li>
-                    
-                </ul>
-            </div>
-
-            <div class="col-md-6">
-                <ul class="resumes">
-                    <li class="resume-item expr">
                         <h3>COVID-19 Tracker</h3>
                         <h4><a href="https://covid19-tracker-e2584.web.app/" target="_blank">Link [Outdated]</a></h4>
                         <img src="./images/skills/covid-19-app.png" alt="COVID-19 Tracker" />
@@ -263,6 +251,18 @@
                             Firebase Hosting
                         </p>
                     </li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="resumes">
+                    <li class="resume-item expr">
+                        <h3>New Hulu Clone</h3>
+                        <h4><a href="https://new-hulu-clone.web.app/"/>Link</a></h4>
+                        <img src="./images/skills/new-hulu-clone-app.png" alt="New Hulu Clone" />
+                        <p>A responsive and sleek design of the probable new Hulu UI built using React JS. Added functionality to top movies based on genre. Hosted online through Firebase.</p>
+                      </li>
                     
                     <li class="resume-item expr">
                         <h3>Simple Tinder UI Clone</h3>
@@ -472,7 +472,16 @@ async function handleSubmit(event) {
     status.innerHTML = "Oops! There was a problem submitting your form"
   });
 }
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
+
+// Make all non-anchor links open in a new tab
+document.querySelectorAll('a[href]').forEach(function (link) {
+  var href = link.getAttribute('href');
+  if (href && !href.startsWith('#')) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  }
+});
 </script>
 
 </body>
