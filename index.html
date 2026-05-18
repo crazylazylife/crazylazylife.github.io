@@ -1,488 +1,271 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!--meta tags-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>CRAZYLAZYLIFE - Website & Blog</title>
-    <link rel="icon" href="./images/logo.jpg">
-    <!--Font Awesome css-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!--Bootstrap css-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!--Animated headline css-->
-    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
-
-    <!--Owl carousel css-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-
-    <!--Magnific popup css-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!--line icon css-->
-    <link rel="stylesheet" href="css/line-icons.min.css">
-
-    <!--Theme css-->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--Responsive css-->
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Himadri S Chatterjee is a founding software engineer building production AI platforms, real-time streaming services, payment systems, and cloud-native products.">
+  <meta name="theme-color" content="#fbfaf7" id="theme-color">
+  <title>Himadri S Chatterjee | Senior Software Engineer</title>
+  <link rel="icon" type="image/png" href="./assets/nightingale-icon.png">
+  <link rel="apple-touch-icon" href="./assets/nightingale-icon.png">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <script>
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const theme = savedTheme || (prefersDark ? "dark" : "light");
+    document.documentElement.dataset.theme = theme;
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Himadri S Chatterjee",
+      "jobTitle": "Founding Software Engineer",
+      "email": "mailto:officialhimadri11@gmail.com",
+      "url": "https://crazylazylife.github.io/",
+      "sameAs": [
+        "https://github.com/crazylazylife",
+        "https://www.linkedin.com/in/h-s-chatterjee/",
+        "https://medium.com/@himadrisankarchatterjee"
+      ],
+      "knowsAbout": ["AI platforms", "GCP", "Real-time streaming", "Payments", "CUDA", "PyTorch", "React"]
+    }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!--Preloader starts-->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="wordmark" href="#top">himadri</a>
+      <div class="nav-links">
+        <a href="#work">work</a>
+        <a href="#projects">projects</a>
+        <a href="#side-projects">lab</a>
+        <a href="#writing">writing</a>
+        <a href="#contact">contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">dark</button>
+      </div>
+    </nav>
+  </header>
 
-<div class="loader_bg"><div class="loader"></div></div>
+  <main id="main">
+    <section class="hero section" id="top">
+      <p class="eyebrow">founding software engineer / bangalore</p>
+      <h1>himadri s chatterjee</h1>
+      <p class="role">senior software engineer / ai platforms / cloud systems</p>
+      <p class="lede">
+        I build production AI platforms, real-time streaming services, payment infrastructure, and product-facing tools.
+        Currently building things at <a href="https://convai.com/" target="_blank" rel="noreferrer">Convai</a>.
+      </p>
+      <div class="link-row" aria-label="Primary links">
+        <a href="mailto:officialhimadri11@gmail.com">email</a>
+        <a href="./assets/Himadri_S_Chatterjee_Resume.docx">resume</a>
+        <a href="https://github.com/crazylazylife" target="_blank" rel="noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/h-s-chatterjee/" target="_blank" rel="noreferrer">linkedin</a>
+      </div>
+      <ul class="quick-facts" aria-label="Career highlights">
+        <li>4+ years shipping production software</li>
+        <li>Core APIs and gRPC streaming for sub-200ms conversational AI experiences</li>
+        <li>GCP, Stripe payments, enterprise deployments, React creator workflows</li>
+      </ul>
+    </section>
 
-<!--Preloader ends-->
+    <section class="section" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">experience</p>
+        <h2>senior engineering range, startup pace</h2>
+      </div>
 
-<!--Navigation area starts-->
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">Mar 2022 - Present</div>
+          <h3>Founding Software Engineer / Convai</h3>
+          <p>
+            Designed REST APIs and gRPC streaming services for real-time conversational AI. Owned early GCP infrastructure,
+            blue-green rollouts, autoscaling, Stripe subscriptions, and enterprise on-premise deployments.
+          </p>
+          <ul class="impact-list">
+            <li>Built core services powering real-time voice and text interactions at scale.</li>
+            <li>Shipped usage-based billing and secure checkout flows for thousands of monthly transactions.</li>
+            <li>Co-built the React creator application and integrations used across the product.</li>
+          </ul>
+        </article>
 
-<header class="nav-area navbar-fixed-top">
-    <div class="container">
-        <div class="row">
-            <!--main menu starts-->
+        <article class="timeline-item">
+          <div class="timeline-meta">May 2021 - Mar 2022</div>
+          <h3>Systems Engineer / Tata Consultancy Services</h3>
+          <p>
+            Developed Azure infrastructure solutions and internal automation tools for enterprise operations, with a focus
+            on compute provisioning, networking, identity, reporting, and resource tracking.
+          </p>
+        </article>
 
-            <div class="col-md-12">
-                <div class="main-menu">
-                    <div class="navbar navbar-cus">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
+        <article class="timeline-item">
+          <div class="timeline-meta">Jan 2021 - Mar 2021</div>
+          <h3>Software Developer Intern / BNP Paribas</h3>
+          <p>
+            Built full-stack features for an internal invoice management platform using Angular, C#, and SQL Server.
+          </p>
+        </article>
+      </div>
+    </section>
 
-                        <div class="navbar-collapse collapse">
-                            <nav class="nav-centered">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
-                                    <li><a class="smooth-menu" href="#about">About</a></li>
-                                    <li><a class="smooth-menu" href="#resume1">Experience</a></li>
-                                    <li><a class="smooth-menu" href="#resume21">Web DevProjects</a></li>
-                                    <li><a class="smooth-menu" href="#resume22">ML Projects</a></li>
-                                    <li><a  href="https://medium.com/@himadrisankarchatterjee">Blog</a></li>
-                                    <li><a class="smooth-menu" href="#contact">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">selected projects</p>
+        <h2>systems, ai, and product work</h2>
+        <p>Compact notes on the work that best reflects how I think: system design, technical depth, and useful products.</p>
+      </div>
 
-            <!--main menu ends-->
-        </div>
-    </div>
-</header>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-label">ai systems</div>
+          <h3>GPT-2 from Scratch with LoRA + Speculative Decoding</h3>
+          <p>
+            Implemented a 124M GPT-2 style model in PyTorch with a custom BPE tokenizer, attention stack, positional embeddings,
+            mixed-precision training, LoRA fine-tuning, and speculative decoding for faster inference.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>PyTorch</span><span>LoRA</span><span>Transformers</span><span>bf16</span>
+          </div>
+        </article>
 
-<!--Navigation area ends-->
+        <article class="project-card">
+          <div class="project-label">gpu kernels</div>
+          <h3>Custom CUDA Kernels for Transformer Ops</h3>
+          <p>
+            Built tiled matmul, fused softmax, flash-attention-style QKV kernels, and INT8 quantized matmul with dynamic
+            per-channel scaling. Packaged kernels as PyTorch C++ extensions and profiled with Nsight Compute.
+          </p>
+          <div class="tags">
+            <span>C++</span><span>CUDA</span><span>INT8</span><span>Nsight</span>
+          </div>
+        </article>
 
-<!--Banner area starts-->
+        <article class="project-card">
+          <div class="project-label">agentic ai</div>
+          <h3>Multi-Agent Orchestration System</h3>
+          <p>
+            Built a Google/Kaggle AI Agents Intensive capstone where specialized agents coordinate through an orchestrator
+            with memory, structured outputs, retries, fallback models, and safety guardrails.
+          </p>
+          <div class="tags">
+            <span>Gemini API</span><span>Tool Use</span><span>Agents</span><span>Guardrails</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="banner-area" id="home">
-    <div id="particles-js"></div>
-    <div class="banner-table">
-        <div class="banner-table-cell">
-            <div class="welcome-text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <section class="intro animate-scale">
+    <section class="section" id="side-projects">
+      <div class="section-heading">
+        <p class="eyebrow">personal lab</p>
+        <h2>side projects with a product lens</h2>
+      </div>
 
-                                <div class="img-area">
-                                    <img src="images/about/main_image.jpeg" alt="">
-                                </div>
+      <div class="side-list">
+        <article class="side-item">
+          <div>
+            <h3>GTJ World</h3>
+            <p>
+              A personal product space at the intersection of web, community, and lightweight publishing. The goal is to keep
+              the surface simple while making the underlying workflows useful and scalable.
+            </p>
+          </div>
+          <a href="https://gtj.world/" target="_blank" rel="noreferrer">gtj.world</a>
+        </article>
 
-                                <h3>I'm Himadri</h3>
+        <article class="side-item">
+          <div>
+            <h3>Nightingale App</h3>
+            <p>
+              A live pet-care marketplace app built to help pet owners find trusted caretakers when they are away, and to help
+              people volunteer their time as Nightingales for pets that need company.
+            </p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mycompany.nightingale&amp;pcampaignid=web_share" target="_blank" rel="noreferrer">google play</a>
+        </article>
+      </div>
+    </section>
 
-                                <h1 class="ah-headline">
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">stack</p>
+        <h2>from model internals to production infra</h2>
+      </div>
 
-                                    <span class="ah-words-wrapper">
-                                        <b class="is-visible">Software Developer</b>
-                                        <b>Blogger</b>
-                                        <b>A student forever</b>
-                                    </span>
-                                </h1>
+      <div class="skill-grid">
+        <article>
+          <h3>AI / ML</h3>
+          <p>PyTorch, CUDA kernels, transformer architectures, multi-agent systems, LLM tool use, Gemini API.</p>
+        </article>
+        <article>
+          <h3>Cloud / Infra</h3>
+          <p>GCP Cloud Run, GKE, IAP, Compute Engine, AWS, Kubernetes, Docker, Terraform.</p>
+        </article>
+        <article>
+          <h3>Backend / Data</h3>
+          <p>Python, Go, gRPC, REST APIs, PostgreSQL, MongoDB, Firebase, Stripe payments.</p>
+        </article>
+        <article>
+          <h3>Product Frontend</h3>
+          <p>React, Next.js, JavaScript, HTML/CSS, creator workflows, integrations, and UI systems.</p>
+        </article>
+      </div>
+    </section>
 
-                                <div class="social-icon">
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/h-s-chatterjee/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.github.com/crazylazylife" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
-                                    </ul>
-                                </div>
+    <section class="section" id="writing">
+      <div class="section-heading">
+        <p class="eyebrow">writing</p>
+        <h2>notes, experiments, and technical essays</h2>
+      </div>
+      <div class="writing-card">
+        <p>
+          I keep longer-form technical writing on Medium, including older computer vision and machine learning notes.
+          This section can later surface selected essays directly.
+        </p>
+        <a class="text-link" href="https://medium.com/@himadrisankarchatterjee" target="_blank" rel="noreferrer">read on medium</a>
+      </div>
+    </section>
 
+    <section class="section contact" id="contact">
+      <p class="eyebrow">contact</p>
+      <h2>let's build systems people can actually depend on</h2>
+      <p>
+        I am open to senior software engineering conversations around AI platforms, cloud-native products, real-time systems,
+        and product-minded engineering teams.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:officialhimadri11@gmail.com">officialhimadri11@gmail.com</a>
+        <a href="https://github.com/crazylazylife" target="_blank" rel="noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/h-s-chatterjee/" target="_blank" rel="noreferrer">linkedin</a>
+      </div>
+    </section>
+  </main>
 
-                            </section>
+  <footer class="footer">
+    <p>Copyright 2026 Himadri S Chatterjee. Built as a fast static site for GitHub Pages.</p>
+  </footer>
+  <script>
+    const themeToggle = document.querySelector(".theme-toggle");
+    const themeColor = document.querySelector("#theme-color");
 
-                            <div class="clearfix"></div>
-
-                            <a class="mouse-scroll hidden-xs dadada" href="#about">
-                                <span class="mouse">
-                                    <span class="mouse-movement"></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Banner area ends-->
-
-<!--About area starts-->
-
-<div class="about-area section-padding" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12">
-                <div class="about-right">
-                    <h2>Hello there!</h2>
-                    <p>I am <span>Himadri Sankar Chatterjee</span>. Software Engineer at Convai. Previously, at TCS and BNP Paribas. I did my MCA from Vellore Institute of Technology and completed my BSc in Computer Science from RKMRC. I have been enthusiastic about the field Artificial
-                    Intelligence specifically in the field of Deep Learning. </p>
-                    <p>Apart from that I have actively participated in many online coding contests through CodeChef, HackerRank. I have also tried to explore the field of practical application
-                    of Deep Learning through small projects.</p>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <ul class="about-list">
-                                <li> <span class="title">Name</span> <span class="value">Himadri S. Chatterjee</span> </li>
-                                <li> <span class="title">Email</span> <span class="value">officialhimadri11@gmail.com</span> </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="about-list">
-                                <li> <span class="title">Phone</span> <span class="value">+91 8017 432134</span> </li>
-                                <!-- <li> <span class="title">Address</span> <span class="value">396, M. M. Road, Pipulpati, Hooghly, W.B., India</span> </li> -->
-                                <li> <span class="title">Hobby</span> <span class="value">Reading Books, Astronomy, Football, Blogging</span> </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a href="https://drive.google.com/file/d/1-d2kp_xyN9uibnBJthwwG7Mu2quD85Co/view?usp=sharing" class="down-btn btn-a" download>download cv</a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--About area ends-->
-
-<!--Experience area starts-->
-
-<div id="resume1" class="experience-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2>My <span>Experience</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="resumes">
-                    <li class="resume-item expr">
-                        <h3>Software Engineer</h3>
-                        <h4>ConvAI</h4>
-                        <h5>March 2022 - Current</h5>
-                        <p>Was a founding engineer at ConvAI. Built the initial version of the product ground up and scaled it up for the growing market.</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Systems Engineer</h3>
-                        <h4>TCS</h4>
-                        <h5>May 2021 - March 2022</h5>
-                        <p>Trained with Azure Platform technologies, worked on developing cloud-based infrastructure solutions for various customer requirements. </p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Software Development Internship</h3>
-                        <h4>BNP Paribas</h4>
-                        <h4><a href="https://drive.google.com/file/d/1xhOMXba76RUjzyN5t0GF-k99cZ2VfFFO/view?usp=sharing">Certificate</a></h4>
-                        <h5>Jan 2021 - March 2021</h5>
-                        <p>Full stack development of banking application for internal invoice management. Extended functionalities of the application with enhanced UI built using
-                        Angular and optimized backend operations developed with C# and SQL Server</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Content Writing Internship</h3>
-                        <h4>TechGeekers</h4>
-                        <h4><a href="https://internshala.com/student/certificate/14441930/8613FE1A-45F6-5E26-2457-B54B0A8A473C">Certificate</a></h4>
-                        <h5>2018</h5>
-                        <p>It was a work-from-home internship on technical content writing based on technological advancements. </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Experience area ends-->
-<!-- Web Dev Projects starts-->
-<div id="resume21" class="experience-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2>WEB DEV <span>Projects</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="resumes">
-                    <li class="resume-item expr">
-                        <h3>Airbnb Clone</h3>
-                        <h4><a href="https://airbnb-clone-d6616.web.app" target="_blank">Link</a></h4>
-                        <img src="./images/skills/airbnb-clone-app.png" alt="Airbnb Clone" />
-                        <p>A responsive and elegant mockup clone of the official Airbnb app with minimilastic design, built using React JS, with Material UI and made available
-                            online with Firebase Hosting.
-                        </p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>COVID-19 Tracker</h3>
-                        <h4><a href="https://covid19-tracker-e2584.web.app/" target="_blank">Link [Outdated]</a></h4>
-                        <img src="./images/skills/covid-19-app.png" alt="COVID-19 Tracker" />
-                        <p>A real-time Covid-19 Tracker. Built with React JS, it has a responsive design and updated stats. Powered by
-                            Firebase Hosting
-                        </p>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            <div class="col-md-6">
-                <ul class="resumes">
-                    <li class="resume-item expr">
-                        <h3>New Hulu Clone</h3>
-                        <h4><a href="https://new-hulu-clone.web.app/"/>Link</a></h4>
-                        <img src="./images/skills/new-hulu-clone-app.png" alt="New Hulu Clone" />
-                        <p>A responsive and sleek design of the probable new Hulu UI built using React JS. Added functionality to top movies based on genre. Hosted online through Firebase.</p>
-                      </li>
-                    
-                    <li class="resume-item expr">
-                        <h3>Simple Tinder UI Clone</h3>
-                        <h4><a href="https://tinder-clone-25d62.web.app/"/>Link [Outdated]</a></h4>
-                        <img src="./images/skills/tinder-clone-app.png" alt="Tinder Clone" />
-                        <p>A clone of the Tinder app built using the MERN stack. The frontend is hosted in Firebase.</p>
-                      </li>
-                  
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Web Dev Projects end-->
-<!--Project area start-->
-<div id="resume22" class="experience-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2>ML <span>Projects</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="resumes">
-                    <li class="resume-item expr">
-                        <h3>Crowd Behaviour Analysis</h3>
-                        <h4><a href="https://github.com/crazylazylife/Crowd-Behaviour-Analysis">Github Link</a></h4>
-                        <h5>2019</h5>
-                        <p>It was originally an idea from an seminar discussion, that was originally discontinued due to unavailability of enough computation resources.
-                           I took the responsibility to atleast achieve some result in this matter. I trained a C3D model on the ViolentFlow dataset to build an autonomous violent behabiour detector.
-                            The  model has an accuracy of ~62%</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Galaxy Zoo Classification Project</h3>
-                        <h4><a href="https://github.com/crazylazylife/galaxy_zoo_classification_project">Github Link</a></h4>
-                        <h5>2019</h5>
-                        <p>This is the basic project for our final year of bachelor's degree, focused on understanding various Convolutional Neural Network and implementing the most suitable one.</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Autonomous Driving using Reinforcement Learning</h3>
-                        <h4><a href="">Under Progress</a></h4>
-                        <h5>2020</h5>
-                        <p>We try to implement a car that will learn to drive through various terrains to reach its destination. The environment is designed in Unity and OpenAI gym library
-                        is used to train a DeepQ Network to drive the car.</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>QReviews Implementation</h3>
-                        <h4><a href="">Crio.Do</a></h4>
-                        <h5>2020</h5>
-                        <p>Using a series of Rest APIs to post user-submitted reviews on social media platform and using an online hosted AI-powered classifier to suggest relevant review hashtags.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-6">
-                <ul class="resumes">
-                    <li class="resume-item expr">
-                      <h3>Predicting Movie Genre from their Poster</h3>
-                      <h4><a href=https://guessmoviegenre.herokuapp.com/>Link</a></h4>
-                      <h5>2018</h5>
-                      <p>Trained a convolutional neural network to predict the possible genres that the movie spans based on the circulated posters of the movie, with consistent accuracy.</p>
-                    </li>
-                  <li class="resume-item expr">
-                      <h3>CNN using Tensorflow - From Scratch</h3>
-                      <h4><a href="https://github.com/crazylazylife/Convolutional_Neural_Network">Github Link</a></h4>
-                      <h5>2018</h5>
-                      <p>Following the course on Deep Learning in Coursera, the concept of Convolutional Neural Network intrigued me. This project helped me in understanding the concepts. **Its not well documented for reproduction**</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Kaggle Pulsar Star Prediction</h3>
-                        <h4><a href="https://github.com/crazylazylife/Kaggle_Pulsar_Star_Prediction">Github Link</a></h4>
-                        <h5>2018</h5>
-                        <p>This was the first project I completed after completing the Machine Learning Crash Course, by the Google Developer's Group.</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Movie and TV Show Dataset Analysis</h3>
-                        <h4><a href="https://github.com/crazylazylife/MovieDatasetAnalysis">Github Link</a></h4>
-                        <h5>2019</h5>
-                        <p>This project utilizes the BeautifulSoup web-scraping library in Python to extract information on the top 1000 movies from the IMdB website. Some initial data analysis was performed on the data.</p>
-                    </li>
-                    <li class="resume-item expr">
-                        <h3>Generating Anime Faces using GAN</h3>
-                        <h4><a href="https://github.com/ACM-VIT/Research-Projects-2020/tree/master/Generating%20Anime%20Faces%20using%20GAN/Himadri">Github Link</a></h4>
-                        <h5>ACM VIT | 2020</h5>
-                        <p>A simple implementation of Generative Adversarial Network to generate Anime Faces, training from dataset available in kaggle.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Project area ends-->
-<!--Contact Area Starts-->
-
-<div id="contact" class="contact-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2>My <span>Contact</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 box-contact-form">
-
-                <form id="contact-form" method="POST" action="https://formspree.io/f/mzbazebe" novalidate="true">
-
-                    <div class="messages"></div>
-
-                    <div class="controls">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button class="btn btn-send" value="">Send message</button>
-                            </div>
-                        </div>
-                    </div>
-                    <p id="my-form-status"></p>
-
-                </form>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1">
-                <div class="right-contact">
-                    <div class="right-contact-text">
-                        <i class="fa fa-map-marker"></i>
-                        <h2>Address / Street</h2>
-                        <p>Bangalore, Karnataka, India</p>
-                    </div>
-                    <div class="right-contact-text">
-                        <i class="fa fa-phone"></i>
-                        <h2>Contact Number</h2>
-                        <p>+91 8017432134</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!--Contact Area Ends-->
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.animatedheadline.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.waypoints.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-var form = document.getElementById("contact-form");
-async function handleSubmit(event) {
-  event.preventDefault();
-  var status = document.getElementById("my-form-status");
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      'Accept': 'application/json'
+    function applyTheme(nextTheme) {
+      const isDark = nextTheme === "dark";
+      document.documentElement.dataset.theme = nextTheme;
+      localStorage.setItem("theme", nextTheme);
+      themeToggle.textContent = isDark ? "light" : "dark";
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
+      themeColor.setAttribute("content", isDark ? "#151411" : "#fbfaf7");
     }
-  }).then(response => {
-    if (response.ok) {
-      status.innerHTML = "Thanks for your submission!";
-      form.reset()
-    } else {
-      response.json().then(data => {
-        if (Object.hasOwn(data, 'errors')) {
-          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-        } else {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        }
-      })
-    }
-  }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
-  });
-}
-form.addEventListener("submit", handleSubmit);
 
-// Make all non-anchor links open in a new tab
-document.querySelectorAll('a[href]').forEach(function (link) {
-  var href = link.getAttribute('href');
-  if (href && !href.startsWith('#')) {
-    link.setAttribute('target', '_blank');
-    link.setAttribute('rel', 'noopener noreferrer');
-  }
-});
-</script>
+    applyTheme(document.documentElement.dataset.theme || "light");
 
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.dataset.theme;
+      applyTheme(current === "dark" ? "light" : "dark");
+    });
+  </script>
 </body>
 </html>
